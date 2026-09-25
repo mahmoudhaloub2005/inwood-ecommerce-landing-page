@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INWOOD</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <section class="hero" id="home">
+
+       <nav class="navbar">
+
+    <a href="#home" class="logo">
+        <img src="../assets/icons/inwoodlogo.svg" alt="INWOOD Logo">
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-icons">
+
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <a href="#products" class="icon-btn" aria-label="Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <button class="icon-btn" aria-label="Account">
+            <i class="fa-solid fa-user"></i>
+        </button>
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Open Menu"
+            aria-expanded="false"
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</nav>
+
+
+        <div class="hero-content">
+
+            <h1>
+                Exclusive Deals of
+                <br>
+                Furniture Collection
+            </h1>
+
+            <p>
+                Explore different categories. Find the best deals.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="categories" id="categories">
+
+        <h2>Explore by Category</h2>
+
+        <div class="categories-content">
+
+            <div class="category-sidebar">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="categorySearch"
+                        placeholder="Search"
+                    >
+
+                </div>
+
+
+                <ul class="category-list">
+
+                    <li>
+                        <a href="#" data-category="bedroom-card">
+                            Bedroom
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" data-category="dining-card">
+                            Dining Room
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" data-category="meeting-card">
+                            Meeting Room
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" data-category="workspace-card">
+                            Workspace
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" data-category="living-card">
+                            Living Room
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" data-category="kitchen-card">
+                            Kitchen
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Living Space
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <a href="#" class="all-category-btn">
+
+                    All Categories
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <div class="category-card bedroom-card active">
+
+                    <div class="category-overlay">
+
+                        <h3>Bedroom</h3>
+
+                        <a href="#">Explore</a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-card dining-card">
+
+                    <div class="category-overlay">
+
+                        <h3>Dining Room</h3>
+
+                        <a href="#">Explore</a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-card meeting-card">
+
+                    <div class="category-overlay">
+
+                        <h3>Meeting Room</h3>
+
+                        <a href="#">Explore</a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-card workspace-card">
+
+                    <div class="category-overlay">
+
+                        <h3>Workspace</h3>
+
+                        <a href="#">Explore</a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-card living-card">
+
+                    <div class="category-overlay">
+
+                        <h3>Living Room</h3>
+
+                        <a href="#">Explore</a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-card kitchen-card">
+
+                    <div class="category-overlay">
+
+                        <h3>Kitchen</h3>
+
+                        <a href="#">Explore</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+   <section class="popular-products" id="products">
+
+    <h2>Popular Products</h2>
+
+    <div class="popular-content">
+
+        <img
+            src="../assets/images/img1.svg"
+            class="popular-background"
+            alt=""
+        >
+
+        <div class="products-list" id="productsSlider">
+
+            <div class="product-card product-green">
+                <img src="../assets/images/img2.svg" alt="Armchair">
+
+                <div class="product-details">
+                    <h3>Armchair</h3>
+                    <p>Light single chair</p>
+                    <span>$145</span>
+                </div>
+            </div>
+
+            <div class="product-card product-blue">
+                <img src="../assets/images/img3.svg" alt="Premium Sofa">
+
+                <div class="product-details">
+                    <h3>Premium Sofa</h3>
+                    <p>Light single chair</p>
+                    <span>$145</span>
+                </div>
+            </div>
+
+            <div class="product-card product-purple">
+                <img src="../assets/images/img4.svg" alt="Minimal Sofa">
+
+                <div class="product-details">
+                    <h3>Minimal Sofa</h3>
+                    <p>Light single chair</p>
+                    <span>$145</span>
+                </div>
+            </div>
+
+            <div class="product-card product-orange">
+                <img src="../assets/images/img5.svg" alt="Dining Chair">
+
+                <div class="product-details">
+                    <h3>Dining Chair</h3>
+                    <p>Light single chair</p>
+                    <span>$145</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="popular-navigation">
+
+        <div class="popular-line"></div>
+
+        <div class="popular-arrows">
+
+            <button id="productPrev">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button id="productNext" class="next-product">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <a href="#" class="explore-all-products">
+
+        Explore all items
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </a>
+
+</section>
+
+
+   <section class="special-package" id="special-package">
+
+    <h2>Special Package</h2>
+
+    <div class="special-package-content">
+
+        <!-- Left Side -->
+        <div class="special-main-product" id="specialMainProduct">
+
+            <div class="special-main-image">
+                <img
+                    id="mainSpecialImage"
+                    src="../assets/images/living.jpeg"
+                    alt="Larkin Wood Full Set"
+                >
+
+                <button class="image-view-btn" aria-label="View product">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+            </div>
+
+            <div class="special-main-bottom">
+
+                <div class="special-main-info">
+                    <h3 id="mainSpecialTitle">Larkin Wood Full Set</h3>
+
+                    <div class="stars" id="mainSpecialStars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <strong id="mainSpecialPrice">$729.99</strong>
+                </div>
+
+                <button class="add-cart-btn">
+                    Add to cart
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="special-description">
+
+            <h3>Description</h3>
+
+            <p id="mainSpecialDescription">
+                Cast Aluminum Outdoor Chaise Lounge As an elegant and classic touch
+                to your outdoor space, this Cast Aluminum Chaise Lounge combines the
+                appearance, function and quality all together, offering you with the
+                best experience.
+            </p>
+
+            <button class="see-more-btn">
+                See More
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+
+
+            <div class="special-list-area">
+
+                <div class="special-list-wrapper" id="specialListWrapper">
+
+                    <div class="special-products-list" id="specialProductsList">
+
+                        <div
+                            class="special-item active-special-item"
+                            data-image="../assets/images/living.jpeg"
+                            data-title="Larkin Wood Full Set"
+                            data-price="$729.99"
+                            data-description="Cast Aluminum Outdoor Chaise Lounge As an elegant and classic touch to your outdoor space, this Cast Aluminum Chaise Lounge combines the appearance, function and quality all together, offering you with the best experience."
+                        >
+                            <img src="../assets/images/living.jpeg" alt="Living Room Family Set">
+
+                            <div class="special-item-info">
+                                <div class="special-item-top">
+                                    <h4>Living Room Family Set</h4>
+                                    <strong>$229.99</strong>
+                                </div>
+
+                                <div class="small-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <a href="#">See Details</a>
+                            </div>
+
+                            <button class="special-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+
+                        <div
+                            class="special-item"
+                            data-image="../assets/images/homeimage.png"
+                            data-title="Modern Living Set"
+                            data-price="$329.99"
+                            data-description="Modern living room furniture set with elegant style, soft colors and a clean contemporary feel suitable for modern homes."
+                        >
+                            <img src="../assets/images/homeimage.png" alt="Living Room Special Set">
+
+                            <div class="special-item-info">
+                                <div class="special-item-top">
+                                    <h4>Living Room Special Set</h4>
+                                    <strong>$329.99</strong>
+                                </div>
+
+                                <div class="small-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="special-item"
+                            data-image="../assets/images/dinning.jpeg"
+                            data-title="Dining Room Package"
+                            data-price="$587.99"
+                            data-description="Beautiful dining room package designed for comfort and family gatherings with a modern and elegant touch."
+                        >
+                            <img src="../assets/images/dinning.jpeg" alt="Dining Room Package">
+
+                            <div class="special-item-info">
+                                <div class="special-item-top">
+                                    <h4>Dining Room Package</h4>
+                                    <strong>$587.99</strong>
+                                </div>
+
+                                <div class="small-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="special-item"
+                            data-image="../assets/images/meeting.png"
+                            data-title="Meeting Room Package"
+                            data-price="$459.99"
+                            data-description="A practical meeting room package with a modern workspace style, ideal for professional environments."
+                        >
+                            <img src="../assets/images/meeting.png" alt="Meeting Room Package">
+
+                            <div class="special-item-info">
+                                <div class="special-item-top">
+                                    <h4>Meeting Room Package</h4>
+                                    <strong>$459.99</strong>
+                                </div>
+
+                                <div class="small-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                                <a href="#">See More</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="special-scroll-controls">
+                    <button id="specialScrollUp" class="scroll-circle scroll-up">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </button>
+
+                    <button id="specialScrollDown" class="scroll-circle scroll-down">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <section class="our-creation" id="about">
+
+    <div class="creation-slider">
+
+        <div class="creation-card creation-intro">
+
+            <div class="creation-text">
+                <h2>
+                    Our
+                    <br>
+                    Own Creation
+                </h2>
+
+                <p>Designed in our studio</p>
+
+                <div class="creation-more">
+                    <span>More</span>
+                    <span class="creation-line"></span>
+
+                    <button id="creationPrev" class="creation-arrow light-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+
+                    <button id="creationNext" class="creation-arrow pink-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="creation-card creation-room active-room">
+
+            <img
+                src="../assets/images/living.jpeg"
+                alt="Living Room"
+            >
+
+            <a href="#" class="explore-room-btn">
+                Explore All Rooms
+            </a>
+
+        </div>
+
+
+        <div class="creation-card creation-room">
+
+            <img
+                src="../assets/images/dinning.jpeg"
+                alt="Dining Room"
+            >
+
+            <a href="#" class="explore-room-btn">
+                Explore Dining Room
+            </a>
+
+        </div>
+
+
+        <div class="creation-card creation-room">
+
+            <img
+                src="../assets/images/meeting.png"
+                alt="Meeting Room"
+            >
+
+            <a href="#" class="explore-room-btn">
+                Explore Meeting Room
+            </a>
+
+        </div>
+
+
+        <div class="creation-card creation-room">
+
+            <img
+                src="../assets/images/work.jpeg"
+                alt="Workspace"
+            >
+
+            <a href="#" class="explore-room-btn">
+                Explore Workspace
+            </a>
+
+        </div>
+
+
+        <div class="creation-card creation-room">
+
+            <img
+                src="../assets/images/Kitchen.png"
+                alt="Kitchen"
+            >
+
+            <a href="#" class="explore-room-btn">
+                Explore Kitchen
+            </a>
+
+        </div>
+
+    </div>
+
+</section><section class="benefits-section">
+
+    <h2>Benefits for your expediency</h2>
+
+    <div class="benefits-container">
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon payment-icon">
+                <img src="../assets/images/payment.png" alt="Payment Method">
+            </div>
+
+            <h3>Payment Method</h3>
+
+            <p>
+                We offer flexible payment
+                options, to make easier.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon return-icon">
+                <img src="../assets/images/exchange.png" alt="Return Policy">
+            </div>
+
+            <h3>Return policy</h3>
+
+            <p>
+                You can return a product
+                within 30 days.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon support-icon">
+                <img src="../assets/images/support.png" alt="Customer Support">
+            </div>
+
+            <h3>Customer Support</h3>
+
+            <p>
+                Our customer support
+                is 24/7.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="testimonials-section">
+
+    <div class="testimonials-heading">
+        <h2>Testimonials</h2>
+        <p>Over 15,000 happy customers.</p>
+    </div>
+
+    <div class="testimonials-content">
+
+        <div class="testimonial-visual">
+
+            <div class="quote-mark">“</div>
+
+            <div class="testimonial-image-box">
+                <img
+                    id="testimonialImage"
+                    src="../assets/images/Testimonial.png"
+                    alt="Customer"
+                >
+            </div>
+
+        </div>
+
+
+        <div class="testimonial-info">
+
+            <p class="testimonial-text" id="testimonialText">
+                “My experience with Mark is a complete success,
+                from customer service, wide range of products,
+                clean store, purchasing experience, the newsletter.
+                Thank you.”
+            </p>
+
+            <div class="testimonial-person">
+
+                <strong id="testimonialName">
+                    Leona Paul
+                </strong>
+
+                <span id="testimonialRole">
+                    CEO of Floatcom
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="testimonial-arrows">
+
+            <button id="testimonialPrev" class="testimonial-arrow prev-review">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button id="testimonialNext" class="testimonial-arrow next-review">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="testimonials-bottom">
+
+        <div class="testimonial-progress">
+            <div class="testimonial-progress-fill"></div>
+        </div>
+
+        <a href="#" class="see-reviews">
+            See all reviews
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+<section class="newsletter-section">
+
+    <div class="newsletter-image">
+        <img
+            src="../assets/images/living.jpeg"
+            alt="Furniture Newsletter"
+        >
+    </div>
+
+    <div class="newsletter-content">
+
+        <div class="newsletter-box">
+
+            <h2>
+                Join Our
+                <br>
+                Newsletter
+            </h2>
+
+            <p>
+                Receive exclusive deals, discounts and many offers.
+            </p>
+
+            <form class="newsletter-form" id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+            <span
+                class="newsletter-message"
+                id="newsletterMessage"
+            ></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer" id="contact">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <img
+                src="../assets/icons/inwoodlogo.svg"
+                alt="INWOOD"
+                class="footer-logo"
+            >
+
+            <div class="footer-social">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="Dribbble">
+                    <i class="fa-brands fa-dribbble"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+            </div>
+
+
+            <div class="footer-address">
+
+                <h4>Address</h4>
+
+                <p>+1236 548 987</p>
+
+                <p>
+                    877 The Bronx, NY
+                    <br>
+                    14568, USA
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>My Account</h3>
+
+            <a href="#">Sign In</a>
+            <a href="#">Register</a>
+            <a href="#">Order status</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Help</h3>
+
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">Sizing</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Shop</h3>
+
+            <a href="#products">All Products</a>
+            <a href="#categories">Bedroom</a>
+            <a href="#categories">Dining Room</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Legal Stuff</h3>
+
+            <a href="#">Shipping & Delivery</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy & Policy</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            Copyright ©2026 Omar sabah. All Rights Reserved
+        </p>
+
+    </div>
+
+</footer>
+
+</section>
+    <section id="about"></section>
+
+
+    <footer id="contact"></footer>
+
+
+    <script src="../js//main.js"></script>
+
+</body>
+
+</html>
