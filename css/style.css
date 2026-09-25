@@ -164,7 +164,16 @@ ul {
 .hero {
     min-height: 720px;
 
-    background-color: #C4C4C4;
+    background-image:
+        linear-gradient(
+            rgba(196, 196, 196, 0.35),
+            rgba(196, 196, 196, 0.35)
+        ),
+        url("../assets/images/homeimage.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     border-bottom-left-radius: 38px;
     border-bottom-right-radius: 38px;
